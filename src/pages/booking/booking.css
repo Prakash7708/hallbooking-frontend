@@ -1,0 +1,17 @@
+.body{
+    height: 100vh;
+    background-color: #011e28;
+    display: grid;
+    place-content: center;
+}
+.page{
+    background-color: rgb(40, 82, 119);
+    height: 550px;
+    width: 500px;
+    display: grid;
+    place-content: center;
+    color:white;
+}
+.loading{
+    height: 100px;
+}

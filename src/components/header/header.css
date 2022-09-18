@@ -1,0 +1,203 @@
+.h-container{
+    background-color: #011e28;
+    padding: 10px 25px;
+}
+/* .h-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+.h-row:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.h-row:first-child .h-col:first-child a{
+    color: #ff7f50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.h-row:first-child .h-col:last-child button{
+    padding: 2px 15px;
+    margin: 0px 10px;
+    border:none;
+    background-color: #ffffff;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+}
+
+.h-row:first-child .h-col:last-child button:active{
+    transform: translateY(-2px);
+}
+.h-row:last-child {
+    margin-top: 30px;
+}
+.h-row:last-child .h-col .icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.h-row:last-child .h-col .icons .icon{
+    color: white;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.h-row:last-child .h-col .icons .icon{
+    color: white;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.h-row:last-child .h-col .icons .icon a{
+    margin: 0 5px ;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.h-row:last-child .h-col .icons .icon.active{
+    color: #ffffff;
+    background-color:#ff7f50;
+    padding: 4px 10px;
+    border-radius: 2px;
+}
+.h-row:last-child .h-col:first-child {
+    margin-bottom: 60px;
+}
+
+.h-row:last-child .h-col:nth-child(2) h2{
+    text-align: center;
+    font-size: 50px;
+    color:#ffffff;
+}
+
+.h-row:last-child .h-col:nth-child(3){
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.h-row:last-child .h-col .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 5px;
+    top: -16px;
+    width: 96%;
+    border: 3px solid #ff7f50;
+   border-radius: 5px;
+}
+
+.h-row:last-child .h-col .search .search-item{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    border-right: 3px solid #ff7f50;
+}
+
+.h-row:last-child .h-col .search .search-item:last-child{
+    border-right: none;
+}
+
+.h-row:last-child .h-col .search .search-item svg{
+    margin-right: 5px;
+    color: #b6b2b2;
+}
+
+.h-row:last-child .h-col .search .search-item input{
+    height: 50px;
+    border: none;
+    outline: none;
+    letter-spacing: 1.3px;
+    color: #011e28;
+
+} 
+.h-row:last-child .h-col .search .search-item input::placeholder{
+    color: #011e28;
+}
+.h-row:last-child .h-col .search .search-item button.btnSearch{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+    background-color: #011e28;
+    color: #ff7f50;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.5s;
+}
+
+/* .h-row:last-child .h-col .search .search-item button.btnSearch{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    letter-spacing: 1.3px;
+    background-color: #011e28;
+    color: #ff7f50;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.5s;
+} */
+
+.date{
+    position: absolute;
+    top: 55px;
+    margin-left: -300px;
+}
+
+.options {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    padding: 0 10px;
+    box-shadow: 0 0 10px #001e28;
+}
+
+.optionsItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.optionsButton .optionsBtn {
+    padding: 2px 5px;
+    border: none;
+    background-color: #001e28;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.optionsButton .optionsBtn:disabled {
+    background-color: #b8b8b8;
+}
+
+.optionsButton span {
+    margin: 0 10px;
+}
+/* .h-row:last-child .h-col .search .search-item{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    border-right: 3px solid #ff7f50;
+}
+
+.h-row:last-child .h-col .search .search-item:last-child{
+    border-right: none;
+}
+
+.h-row:last-child .h-col .search .search-item svg{
+    margin-right: 5px;
+}
+
+.h-row:last-child .h-col .search .search-item input{
+    height: 40px;
+} */

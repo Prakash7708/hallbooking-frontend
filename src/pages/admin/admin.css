@@ -1,0 +1,16 @@
+.createhotel{
+    background-color: #011e28;
+    display: grid;
+    place-content: center;
+    color:aliceblue
+}
+.admintable{
+    width: 500px;
+    margin-left: 20px;
+}
+.createhotel h3{
+    text-align: center;
+}
+.orders{
+    background-color: #011e28;
+}

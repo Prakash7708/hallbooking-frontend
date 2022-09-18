@@ -1,0 +1,28 @@
+.hotelimg{
+    height: 300px;
+    width: 350px;
+}
+.footer{
+    height: 150px;
+    background-color: #011e28;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer button{
+    padding: 15px 25px;
+    color: #f5f9fa;
+    background-color:#ff7f50 ;
+    border: none;
+}
+.roomimg{
+    display: flex;
+    
+}
+h3{
+    color: #ff7f50;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
