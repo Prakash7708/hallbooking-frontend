@@ -22,29 +22,42 @@ function Header({type}) {
       ]);
 
       const [openOptions, setOpenOptions] = useState(false)
-      const [options, setOptions] = useState({
+const [options, setOptions] = useState({
           adult: 1,
           children: 0,
           room: 1
-      })
+})
     //alert(options.adult)
-      const handleOption = (name, operation) => {
+const handleOption = (name, operation) => {
         setOptions((prev) => {
             return {
                 ...prev,
                 [name]: operation === 'increment' ? options[name] + 1 : options[name] - 1,
             }
         })
-    }
+}
 
-  return (
+let doLogin = () => {
+        if(localStorage.getItem("react_app_token")){
+        localStorage.removeItem("react_app_token");
+         alert("logout")
+        
+        navigate("/hotels");
+      }else{
+         navigate("/login");
+        }
+};
+
+return (
     <div className='h-container'>
         <div className='h-row'>
             <div className='h-col'>
                <Link to={"/"}>StayBook</Link>
             </div>
             <div className='h-col'>
-               <button onClick={()=>navigate("/login")}>Login</button><button onClick={()=>navigate("/register")}>Register</button>
+               <button onClick={()=>doLogin()}>{
+                localStorage.getItem("react_app_token")?<>Logout</>:<>Login</>
+               }</button><button onClick={()=>navigate("/register")}>Register</button>
             </div>
         </div>
         <div className='h-row'>
